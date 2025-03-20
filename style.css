@@ -359,15 +359,15 @@ html, body {
     border-radius: 6px;
     background-color: #FFF;
     border: 1px solid #FFF;
+    transition: border 0.3s ease;
 }
 
-.card.active {
-    border-radius: 6px;
+.card:hover {
     border: 1px solid #9BCFFD;
 }
 
-.card.active .card__number {
-    border-bottom: none;
+.card:hover .card__number {
+    border-bottom: 1px solid #FFF;
 }
 
 .card__item.number-wrapper {
@@ -422,6 +422,7 @@ html, body {
     letter-spacing: -0.084px;
     border-bottom: 1px solid rgba(64, 148, 247, 0.2);
     margin-right: 20px;
+    transition: border-bottom 0.3s ease;
 }
 
 .card__title {
